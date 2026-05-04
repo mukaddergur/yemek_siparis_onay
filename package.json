@@ -1,0 +1,21 @@
+{
+  "name": "lezzet-sepeti",
+  "version": "1.0.0",
+  "description": "Modern yemek siparis web sitesi (Node.js + Express + SQLite).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "yemek",
+    "siparis",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}

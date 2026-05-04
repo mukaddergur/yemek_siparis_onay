@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lezzet Sepeti | Yemek Siparis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <h1>Lezzet Sepeti</h1>
+      <p>Modern ve hizli yemek siparis deneyimi</p>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <section class="panel" id="foods-section">
+      <div class="section-title-row">
+        <h2>Menuler</h2>
+        <button id="aiSuggestionBtn" class="btn btn-accent">Yemek Onerisi</button>
+      </div>
+      <p id="aiSuggestionResult" class="suggestion-text">Bugun ne yesem?</p>
+      <div id="foodList"></div>
+    </section>
+
+    <aside class="panel cart-panel">
+      <h2>Sepetim</h2>
+      <ul id="cartList" class="cart-list"></ul>
+      <div class="cart-summary">
+        <p>Toplam: <strong id="cartTotal">0 TL</strong></p>
+        <button id="checkoutBtn" class="btn btn-primary">Siparisi Onayla</button>
+      </div>
+      <div id="orderConfirmation" class="confirmation hidden"></div>
+    </aside>
+
+    <section class="panel reviews-panel">
+      <h2>Puan ve Yorumlar</h2>
+      <form id="reviewForm" class="review-form">
+        <label for="foodSelect">Yemek Sec</label>
+        <select id="foodSelect" required></select>
+
+        <label for="rating">Puan (1-5)</label>
+        <input id="rating" type="number" min="1" max="5" required>
+
+        <label for="comment">Yorum</label>
+        <textarea id="comment" rows="4" placeholder="Yemek hakkinda yorumunuzu yazin..." required></textarea>
+
+        <button type="submit" class="btn btn-secondary">Yorumu Gonder</button>
+      </form>
+
+      <div id="reviewsList" class="reviews-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Lezzet Sepeti. Tum haklari saklidir.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

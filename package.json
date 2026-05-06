@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Modern yemek siparis web sitesi (Node.js + Express + SQLite).",
   "main": "server.js",
+  "engines": {
+    "node": ">=18 <24"
+  },
   "scripts": {
     "start": "node server.js"
   },

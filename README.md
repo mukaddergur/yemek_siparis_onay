@@ -31,6 +31,8 @@ npm install
 npm start
 ```
 
+> Not: Projenin Render veya benzeri Linux tabanlı ortamlarda sorunsuz calismasi icin Node.js 18.x veya 20.x kullanmaniz onerilir.
+
 5. Tarayicidan acin:
 
 ```text

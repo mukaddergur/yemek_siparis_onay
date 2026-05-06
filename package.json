@@ -7,7 +7,8 @@
     "node": ">=18 <24"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "npm rebuild sqlite3 --update-binary"
   },
   "keywords": [
     "yemek",
